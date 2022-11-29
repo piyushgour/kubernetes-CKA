@@ -1,0 +1,12 @@
+apiVersion: v1 
+kind: Pod
+metadata: 
+  name: nginx-on-node1
+  labels:
+    name: nginx-on-node1 
+    app: web-server
+spec: 
+  containers:
+  -  name: nginx-on-node1
+     image: nginx 
+  nodeName: multinode-worker
